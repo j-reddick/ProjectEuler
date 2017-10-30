@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProjectEuler.Solutions;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -22,6 +23,8 @@ namespace ProjectEuler
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        List<ISolution> Solutions = new List<ISolution>();
+
         public MainPage()
         {
             this.InitializeComponent();
